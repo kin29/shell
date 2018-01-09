@@ -6,3 +6,6 @@
 
 ### シェル変数/seqコマンド/forループ
 - oneliner.sh
+
+### awk(オーク)コマンド
+- awk.sh
