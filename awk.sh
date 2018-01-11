@@ -27,3 +27,8 @@ seq 1993 2019 | awk '$1%4==0{print}' | wc -l
 
 #forループで九九の計算式を出力
 for a in `seq 1 9`;do for b in `seq 1 9`; do echo $a $b ; done ; done | awk '{print $1 "*" $2 "=" $1*$2}'
+
+
+# awk.txtはファイルなので「|」はいらない
+# awk '{print $1 * $2;}' dummy/awk.txtと同じ
+awk '{print $1 + $2;}' < dummy/awk.txt
